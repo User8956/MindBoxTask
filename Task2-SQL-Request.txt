@@ -1,0 +1,5 @@
+select ProductName, CategoryName from products
+	left join productCategoryLink
+	on productCategoryLink.ProductId = products.Id
+	left join categories
+	on productCategoryLink.CategoryId = categories.Id
